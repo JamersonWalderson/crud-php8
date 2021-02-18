@@ -7,17 +7,24 @@ use App\Model\Database;
 class TaskModel
 {
     private $database;
-    
+
+    public function __construct()
+    {
+        
+    }
+
     public function insertModel($param_task)
     {
         try{
-            $database = new Database;
-            $database->connect();
+            $this->database = new Database;
 
-            $query = "INSERT INTO to_do_list(task) VALUES(:task)";
-            $stmt = $this->database->prepare($query);
+            $this->database->connect();
+            $query = "INSERT INTO to_do_list(task) VALUES('asds')";
+            /**
+            $stmt = $database->prepare($query);
             $stmt->bindParam(':task', $param_task);
-            return $stmt->execute();
+            */
+            return $this->database->execute($query);
 
         } catch(PDOException $e) {
             die("Erro: $query" .$e->getMessege());

@@ -28,10 +28,4 @@ require_once 'App/View/template/footer.php';
 //Routes
 require_once 'routes.php';
 
-
-use App\Controller\TaskController;
-
-
-$t = new TaskController();
-
 ?>

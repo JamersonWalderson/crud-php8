@@ -9,5 +9,8 @@ define ('DB_USER', 'root');
 define ('DB_PASS', '');
 define ('DB_CHARSET', 'utf8');
 
+//URL
+define ('URL_VIEW', 'App/View/public');
+
 
 ?>

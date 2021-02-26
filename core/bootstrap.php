@@ -15,13 +15,19 @@ $loader->addNamespace('App', 'App');
 //Loading configurations
 require_once 'config.php';
 
+
+
 /* Template */
 require_once 'App/View/template/header.php';
 require_once 'App/View/template/footer.php';
 /*/Template */
 
 //Home page
-require_once 'App/View/public/main.php';
+// require_once 'App/View/public/main.php';
+//require_once 'index2.php';
+
+//Routes
+require_once 'routes.php';
 
 
 use App\Controller\TaskController;

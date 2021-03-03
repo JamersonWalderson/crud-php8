@@ -1,8 +1,9 @@
 <?php
 
+/**
+ * @var $request get a URL array
+ */
 $request = explode('?', $_SERVER['REQUEST_URI'], 2);
-
-$requestUri = $_SERVER['REQUEST_URI'];
 
 switch($request[0]) {
     case '/':

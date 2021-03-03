@@ -5,8 +5,6 @@ namespace App\Controller;
 use App\Model\TaskModel;
 use App\Scripts\Message;
 
-
-
 class TaskController
 {
     private $model = null;

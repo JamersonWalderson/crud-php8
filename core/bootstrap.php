@@ -23,16 +23,9 @@ require_once 'App/View/template/footer.php';
 /*/Template */
 
 //Home page
-// require_once 'App/View/public/main.php';
-//require_once 'index2.php';
+//require_once 'index.php';
 
 //Routes
 require_once 'routes.php';
-
-
-use App\Controller\TaskController;
-
-
-$t = new TaskController();
 
 ?>

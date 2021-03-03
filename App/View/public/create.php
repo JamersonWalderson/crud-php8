@@ -19,7 +19,7 @@ if (isset($_POST['task'])) {
 
         <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
             <textarea class="form-control" name="task" id="message-text"></textarea>
-            <button type="submit" class="btn btn-success">Concluír</button>
+            <button type="submit" class="btn btn-success">Concluir</button>
             <a  href="/index" class="btn btn-secondary">Cancelar</a>
         </form>
 
